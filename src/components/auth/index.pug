@@ -1,0 +1,31 @@
+.auth
+    .auth__logo
+        img(src="/images/content/logo.png" alt="lorem")
+    form(action="/index.html" method="POST").auth__form.form
+        .auth__title.form__title Авторизация
+        .auth__txt.form__txt.
+            Войдите в личный кабинет <br>
+            для просмотра курсов
+        .auth__fields.form__fields
+            -
+                var fields = [
+                    {
+                        title: 'Логин CRM',
+                        type: 'text',
+                        name: 'login',
+                        placeholder: 'Введите логин',
+                        required: true
+                    },
+                    {
+                        title: 'Пароль',
+                        type: 'password',
+                        name: 'password',
+                        placeholder: 'Введите пароль',
+                        required: true
+                    },
+
+                ];
+            each i in fields
+                .form__field
+                    include ../form/field
+        button(type='submit').auth__submit.form__submit.btn Войти

@@ -1,0 +1,29 @@
+.templates
+    .templates__title Шаблоны к выполнению задания
+    .templates__list
+        -
+            var list = [
+                {
+                    img: '/images/content/word.svg',
+                    size: '28 кб',
+                    name: 'интервью с топ менеджером.xlsx'
+                },
+                {
+                    img: '/images/content/exel.svg',
+                    size: '28 кб',
+                    name: 'интервью с топ менеджером.xlsx'
+                },
+                {
+                    img: '/images/content/adobe.svg',
+                    size: '28 кб',
+                    name: 'интервью с топ менеджером.xlsx'
+                }
+            ];
+        each i in list
+            .templates__item
+                .template
+                    .template__img
+                        img(src=i.img alt="lorem")
+                    .template__size= i.size
+                    .template__right
+                        a(href="#" download).template__name.link= i.name

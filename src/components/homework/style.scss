@@ -1,0 +1,23 @@
+.homework{
+  border: 1px solid $border;
+  padding: 60px 80px 120px 60px;
+
+  &__title{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  &__ol{
+    list-style: decimal;
+    display:grid;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  
+  &__li{
+    &::marker{
+      color: $blue;
+    }
+  }
+}

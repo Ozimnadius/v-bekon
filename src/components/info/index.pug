@@ -1,0 +1,72 @@
+form(action="/index.html" method="POST" enctype="multipart/form-data").info
+    .info__left
+        .info__avatar
+            include ../info-avatar/index
+    .info__right
+        .info__form.form
+            .info__title.form__title Здравствуйте!
+            .info__txt.form__txt Дополните информацию о себе
+            .info__fields.form__fields
+                -
+                    var fields = [
+                        {
+                            title: 'Имя',
+                            type: 'text',
+                            name: 'name',
+                            placeholder: 'Введите имя',
+                            required: false
+                        },
+                        {
+                            title: 'Фамилия',
+                            type: 'text',
+                            name: 'secondName',
+                            placeholder: 'Введите фамилию',
+                            required: false
+                        },
+                        {
+                            title: 'Логин CRM',
+                            type: 'text',
+                            name: 'login',
+                            placeholder: 'Введите логин',
+                            required: false
+                        },
+                        {
+                            title: 'Телефон (личный)',
+                            type: 'tel',
+                            name: 'tel',
+                            placeholder: 'Введите ваш телефон',
+                            required: false
+                        },
+                        {
+                            title: 'Телефон (корпоративный)',
+                            type: 'tel',
+                            name: 'tel2',
+                            placeholder: 'Введите ваш телефон',
+                            required: false
+                        },
+                        {
+                            title: 'Эл. почта',
+                            type: 'email',
+                            name: 'email',
+                            placeholder: 'Эл. почта',
+                            required: false
+                        },
+                        {
+                            title: 'Город',
+                            type: 'text',
+                            name: 'city',
+                            placeholder: 'Город',
+                            required: false
+                        },
+                        {
+                            title: 'Дата рожденния',
+                            type: 'date',
+                            name: 'date',
+                            placeholder: 'Дата рожденния',
+                            required: false
+                        }
+                    ];
+                each i in fields
+                    .form__field
+                        include ../form/field
+            button(type='submit').info__submit.form__submit.btn Сохранить

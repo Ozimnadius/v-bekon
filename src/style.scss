@@ -1,0 +1,23 @@
+//USER
+@import "default/css/variables";
+@import "default/css/mixins";
+@import "default/css/adjustment";
+@import "default/css/common";
+
+//COMPONENTS
+@import "components/header/style";
+@import "components/footer/style";
+@import "components/form/style";
+@import "components/auth/style";
+@import "components/info/style";
+@import "components/info-avatar/style";
+@import "components/courses/style";
+@import "components/bread/style";
+@import "components/module/style";
+@import "components/homework/style";
+@import "components/answer/style";
+@import "components/file/style";
+@import "components/templates/style";
+
+//PAGES
+@import "pages/style";

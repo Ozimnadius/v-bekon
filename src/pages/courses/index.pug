@@ -1,0 +1,32 @@
+extends ../../main
+
+block variables
+    - var title = 'Главная'
+
+block content
+    main.page
+        section
+            .container
+                -
+                    var i = {
+                        title: 'Доступные тренинги',
+                        list: [
+                            {
+                                name: 'Название тренинга',
+                                txt: '<b>5 уроков.</b> Катерина Уколова. Тренинг "Школа продаж" для корпоративных клиентов',
+                                link: '/course.html'
+                            },
+                            {
+                                name: 'Название тренинга2',
+                                txt: '<b>12 уроков.</b> Катерина Уколова. Тренинг "Школа продаж" для корпоративных клиентов',
+                                link: '/course.html'
+                            },
+
+                        ]
+                    };
+                include ../../components/courses/index
+
+
+
+
+

@@ -1,0 +1,42 @@
+.file{
+
+  &__input{
+    display: none;
+  }
+
+  &__fake{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 204px;
+    height: 50px;
+    color: $link;
+    border: 1px solid currentColor;
+    cursor: pointer;
+    @include tr;
+    
+    svg{
+      path{
+        fill: currentColor;
+      }
+    }
+
+
+    &:hover{
+      color: $link-hover;
+    }
+  }
+
+  &__txt{
+    color: $border;
+    font-size: 14px;
+
+  }
+}

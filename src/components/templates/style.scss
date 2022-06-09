@@ -1,0 +1,29 @@
+.templates{
+  color: $txt2;
+
+  &__title{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  &__item{
+    border: 1px solid $placeholder;
+    margin-bottom: -1px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.template{
+  padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 120px 70px 1fr;
+  align-items: center;
+
+  &__name{
+    display: inline-block;
+  }
+}

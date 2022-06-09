@@ -1,0 +1,7 @@
+.courses
+    .courses__title= i.title
+    .courses__list
+        each j in i.list
+            a(href=j.link).courses__item
+                span.courses__name= j.name
+                span.courses__txt!= j.txt

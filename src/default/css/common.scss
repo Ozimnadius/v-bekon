@@ -1,0 +1,31 @@
+.btn {
+  min-width: 104px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: $btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $bg;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 30px;
+  cursor: pointer;
+  @include tr;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.link {
+  color: $link;
+  text-decoration: underline;
+  @include tr;
+
+  &:hover {
+    color: $link-hover;
+  }
+}

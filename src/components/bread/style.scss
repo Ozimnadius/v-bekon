@@ -1,0 +1,15 @@
+.bread{
+  display: inline-flex;
+  gap: 5px;
+
+  &__item{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: $blue;
+
+    &.active{
+      color: $placeholder;
+    }
+  }
+}

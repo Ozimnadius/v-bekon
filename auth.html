@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Portfolio | Главная</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/libs.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Для изменений после верстки-->
+    <link rel="stylesheet" href="/css/custom.css">
+    <script defer src="/js/libs.js"></script>
+    <script defer src="/js/script.js"></script>
+    <!-- Для изменений после верстки-->
+    <script defer src="/js/custom.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__content">
+        <main class="page">
+          <section>
+            <div class="auth">
+              <div class="auth__logo"><img src="/images/content/logo.png" alt="lorem"></div>
+              <form class="auth__form form" action="/index.html" method="POST">
+                <div class="auth__title form__title">Авторизация</div>
+                <div class="auth__txt form__txt">
+                  Войдите в личный кабинет <br>
+                  для просмотра курсов
+                </div>
+                <div class="auth__fields form__fields">
+                  <div class="form__field">
+                    <div class="form-field">
+                      <div class="form-field__name">Логин CRM</div>
+                      <div class="form-field__val">
+                        <input class="form-field__input" type="text" name="login" placeholder="Введите логин" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <div class="form-field">
+                      <div class="form-field__name">Пароль</div>
+                      <div class="form-field__val">
+                        <input class="form-field__input" type="password" name="password" placeholder="Введите пароль" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="auth__submit form__submit btn" type="submit">Войти</button>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
