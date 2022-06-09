@@ -5,6 +5,10 @@
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 40px;
+    @media (max-width: 767.98px){
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
   }
 
   &__item{
@@ -22,6 +26,13 @@
   display: grid;
   grid-template-columns: 120px 70px 1fr;
   align-items: center;
+  @media (max-width: 767.98px){
+    padding: 10px 15px;
+    grid-template-columns: 100%;
+    gap: 5px;
+    justify-items: center;
+    text-align: center;
+  }
 
   &__name{
     display: inline-block;

@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  @media (max-width: 767.98px){
+    padding: 0 15px;
+  }
 
   &__logo{
     img{

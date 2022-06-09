@@ -1,11 +1,18 @@
 .homework{
   border: 1px solid $border;
   padding: 60px 80px 120px 60px;
+  @media (max-width: 767.98px){
+    padding: 20px 15px;
+  }
 
   &__title{
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 40px;
+    @media (max-width: 767.98px){
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 
   &__ol{

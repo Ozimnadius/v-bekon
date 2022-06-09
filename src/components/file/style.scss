@@ -8,6 +8,10 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    @media (max-width: 767.98px){
+       flex-direction: column;
+      gap: 5px;
+    }
   }
 
   &__btn{
@@ -36,7 +40,12 @@
 
   &__txt{
     color: $border;
-    font-size: 14px;
-
+    @media (max-width: 767.98px){
+      text-align: center;
+      font-size: 10px;
+      br{
+        display: none;
+      }
+    }
   }
 }
